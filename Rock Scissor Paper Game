@@ -1,0 +1,25 @@
+import random
+option = str(input("What do you chose? Type 0 for Rock, 1 for paper, or 2 for Scissors. "))
+computer = str(random.randint(0,2))
+print("Computer Chose: " + str(computer))
+
+if option == '0' and computer == '1':
+    print("You lose")
+elif option == '0' and computer == '2':
+    print("You win")
+elif option == '0' and computer == '0':
+    print("Tie")
+elif option == '1' and computer == '0':
+    print("You win")
+elif option == '1' and computer == '1':
+    print("Tie")
+elif option == '2' and computer == '2':
+    print("Tie")
+elif option == '1' and computer =='2':
+    print("You lose")
+elif option == '2' and computer == '0':
+    print("You lose")
+elif option =='2' and computer == '1':
+    print("You win")
+else:
+    print("ERROR")
